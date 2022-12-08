@@ -5,7 +5,7 @@ A cache representation using separate chaining hash tables to simulate the movem
 - cd CacheSimulator
 - using makefile:
   - mingw32-make
-  testcases:
+  - testcases:
   - ./cache 512 assoc:1 fifo 16 1024 assoc:1 fifo trace1.txt 
           (output file: one_1.txt)
   - ./cache 512 assoc:1 lru 16 512 assoc:2 lru trace1.txt
@@ -14,7 +14,7 @@ A cache representation using separate chaining hash tables to simulate the movem
           (output file: one_6.txt)
 - not using makefile:
   - gcc -Wall -Werror cache.c -o cache
-  testcases:
+  - testcases:
   - ./cache 512 assoc:1 fifo 16 1024 assoc:1 fifo trace1.txt 
           (output file: one_1.txt)
   - ./cache 512 assoc:1 lru 16 512 assoc:2 lru trace1.txt
