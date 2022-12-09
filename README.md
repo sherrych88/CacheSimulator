@@ -13,7 +13,7 @@ A cache representation using separate chaining hash tables to simulate the movem
   - ./cache 256 assoc:64 lru 4 512 assoc:4 fifo trace1.txt
           (output file: one_6.txt)
 - not using makefile:
-  - gcc -Wall -Werror cache.c -o cache
+  - gcc -Wall -Werror -std=c11 cache.c -o cache -lm
   - testcases:
   - ./cache 512 assoc:1 fifo 16 1024 assoc:1 fifo trace1.txt 
           (output file: one_1.txt)
